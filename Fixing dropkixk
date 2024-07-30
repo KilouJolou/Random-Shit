@@ -1,0 +1,24 @@
+local p = game.Players.LocalPlayer
+local Humanoid = p.Character:WaitForChild("Humanoid")
+
+local AnimAnim = Instance.new("Animation")
+AnimAnim.AnimationId = "rbxassetid://17354976067"
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+AnimAnim.AnimationId = "rbxassetid://0"
+Anim:Play()
+wait(0)
+
+local kjdrop = Instance.new("Sound")
+kjdrop.Name = "new_sfx"
+kjdrop.SoundId = "rbxassetid://17429233290"
+kjdrop.Parent = game.Players.LocalPlayer.Character.Torso
+kjdrop:Play()
+kjdrop.Volume = 1.52
+wait(0)
+
+local kj20them = Instance.new("Sound")
+kj20them.Name = "kj_20-20-20_startup_music_only"
+kj20them.SoundId = "rbxassetid://17356346310"
+kj20them.Parent = game.Players.LocalPlayer.Character.Torso
+kj20them:Play()
+kj20them.Volume = 1.38
